@@ -1,2 +1,3 @@
-# billiards-js
-A game of billiards written in ECMAScript.
+# Billiards JS
+
+A collection of billiards and lawn games written in ECMAScript.
