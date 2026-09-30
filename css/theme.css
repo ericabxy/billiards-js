@@ -1,0 +1,17 @@
+/* Default light mode styles */
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+canvas {
+  border: .33em inset silver;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1a1a1a;
+    color: #ffffff;
+  }
+}
