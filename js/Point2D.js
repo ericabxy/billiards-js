@@ -1,5 +1,5 @@
 class Point2D {
-  x, y;
+  x; y;
 
   constructor (x, y) {
     this.x = x;
