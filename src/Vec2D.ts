@@ -1,15 +1,15 @@
 class Vec2D {
-    dx = 0.00;
-    dy = 0.00;
+    dx: number = 0.00;
+    dy: number = 0.00;
 
     // public void setVec (float dx, float dy)
-    setVec (dx, dy) {
+    setVec (dx: number, dy: number): void {
         this.dx = dx;
         this.dy = dy;
     }
 
     // public float mag ()
-    mag () {
+    mag (): number {
         return Math.sqrt(
             this.dx * this.dx +
             this.dy * this.dy
@@ -17,19 +17,19 @@ class Vec2D {
     }
 
     // public void addVec (Vec2D vec)
-    addVec (vec) {
+    addVec (vec: Vec2D): void {
         this.dx += vec.dx;
         this.dy += vec.dy;
     }
 
     // public void subVec (Vec2D vec)
-    subVec (vec) {
+    subVec (vec: Vec2D): void {
         this.dx -= vec.dx;
         this.dy -= vec.dy;
     }
 
     // public void unitVec ()
-    unitVec () {
+    unitVec (): void {
         var mag = this.mag();
         this.setVec(this.dx / mag, this.dy / mag);
     }

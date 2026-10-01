@@ -1,11 +1,11 @@
-class Circle {
-  x; y;
+import Point2D from './Point2D.js';
+
+class Circle extends Point2D {
   radius;
   diam;
 
   constructor (x, y, diam) {
-    this.x = x;
-    this.y = y;
+    super(x, y);
     this.radius = diam / 2;
     this.diam = diam;
   }

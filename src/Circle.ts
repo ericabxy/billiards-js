@@ -1,11 +1,11 @@
+import Point2D from './Point2D.ts';
+
 class Circle {
-  x, y;
-  radius;
-  diam;
+  radius: number;
+  diam: number;
   
-  constructor (x, y diam) {
-    this.x = x;
-    this.y = y;
+  constructor (x: number, y: number, diam: number) {
+    super(x, y);
     this.diam = diam;
     this.radius = diam / 2;
   }
